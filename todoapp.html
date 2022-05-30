@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style-todo.css">
+</head>
+
+<body>
+    <main class="app-todo">
+
+        <!-- Start of Greeting and User Name Input -->
+        <section class="greeting">
+            <h2 class="title">
+                What's up, <input type="text" id="name" placeholder="Please Enter Your Name Here!">
+            </h2>
+        </section>
+        <!-- End of Greeting and User Name Input -->
+        <section class="create-todo">
+            <!-- Start of new task input with category options -->
+            <h2>CREATE A TODO</h2>
+
+            <form id="new-todo-form">
+                <h4>What's on your todo list?</h4>
+                <input type="text" name="content" placeholder="e.g. Meeting at 10am">
+
+
+                <h4>Task Type?</h4>
+                <div class="options">
+
+
+                    <label>
+                        <input type="radio" name="category" id="category1" value="business" />
+                        <span class="bubble business" /></span>
+                        <div>Business</div>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="category" id="category2" value="personal" />
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+
+                </div>
+
+                <input type="submit" value="Add todo" />
+
+            </form>
+            <!-- End of new task input with category options -->
+        </section>
+
+        <section class="todo-list">
+            <!-- Start of list of todo items, html by todoscrip.js -->
+            <h3>TODO LIST</h3>
+            <div class="list" id="todo-list">
+
+            </div>
+            <!-- End of list of todo items -->
+        </section>
+
+
+    </main>
+</body>
+<script src="todoscript.js"></script>
+
+</htm>

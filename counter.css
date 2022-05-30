@@ -1,0 +1,236 @@
+:root{
+    --dark:#429E9D;
+    --darker:#21666E;
+    --darkest:#1c5f5f;
+    --medium:#A5EDF3;
+    --light:#FFFFFA;
+    --plum:#AF6EAB;
+    --purple:#8D3F7F;
+     --blue:#8A89BE;
+    --lightblue:#ABABD9;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('counter-bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    color: #FFF;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+main h1{
+    font-size: 4rem;
+    color: var(--light);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+
+.counter{
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--light);
+}
+
+.counter-value{
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -0.5rem;
+}
+
+.counter-controls button{
+    margin: 0.5rem;
+}
+
+#new-task-form{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+    color: var(--medium);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+button span{
+    display: block;
+    transition: 0.4s ease-out;
+}
+
+button[data-action="reset"]{
+    color: #DE6868;
+    opacity: 1;
+}
+
+button[data-action="reset"]:hover{
+    opacity: 0.5;
+}
+
+.save{
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save button{
+    color: #3d3d3d;
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+#new-task-input{
+    flex:1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-task-input::placeholder{
+   color: var(--medium);
+}
+
+#new-task-submit{
+    color:var(--purple);
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-submit:hover{
+    opacity: 0.7;
+}
+
+#new-task-submit:active{
+    opacity: 0.4;
+}
+
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list{
+    padding: 1rem;
+}
+
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: var(--darker);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#task .task .cont{
+    flex: 1 1 0%;
+}
+
+#tasks .task .content .text{
+    color: var(--medium);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only){
+    color: var(--light);
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+
+.task .actions button:hover{
+    opacity: 0.7;
+}
+
+.task .actions button:active{
+    opacity: 0.4;
+}
+
+.task .actions .edit{
+     color: var(--light);
+}
+
+.task .actions .delete{
+    color: #DE6868;
+}
+
+
+

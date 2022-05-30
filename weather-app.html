@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class="app-wrap">
+        <!-- Start of user input for selected City, country code -->
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="E.g. Melbourne,AU">
+        </header>
+        <!-- End of user input for selected City, country code -->
+        <main>
+            <!-- Start of displayed returned weather data from API -->
+            <section class="location">
+                <div class="city">Search for a location</div>
+                <div class="date"></div>
+            </section>
+            <div class="current">
+                <div class="temp"><span></span></div>
+                <div class="weather"></div>
+                <div class="hi-low"></div>
+            </div>
+            <!-- End of displayed returned weather data from API -->
+        </main>
+
+
+    </div>
+    <script src="weather-script.js"></script>
+</body>
+
+</html>
