@@ -115,6 +115,13 @@
   transform: rotate(90deg);
 }
 
+.card{
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   margin-left: 4rem;
+   margin-right: 4rem;
+   border-radius: 00.5em;
+}
 
 @media (max-width: 1024px) {
     .sidebar{
@@ -146,6 +153,11 @@
 	.sidebar.is-active {
 		left: 0;
 	}
+
+.card{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      }
 
 }
 
@@ -189,14 +201,6 @@ main h1{
     text-transform: uppercase;
 }
  
-
-.card{
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-   margin-left: 4rem;
-   margin-right: 4rem;
-   border-radius: 00.5em;
-}
 
 .skill {
   color: var(--darkest);
